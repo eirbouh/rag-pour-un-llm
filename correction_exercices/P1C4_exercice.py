@@ -35,7 +35,7 @@ plt.show()
 
 
 ### Visualisation avec Mistral embeddings
-Pour inclure Mistral, voici comment générer les embeddings et les visualiser :
+# Pour inclure Mistral, voici comment générer les embeddings et les visualiser :
 
 
 from mistral.embedding import EmbeddingClient
@@ -65,7 +65,7 @@ plt.show()
 
 
 ### Comparaison avec fastText
-Nous pouvons comparer les embeddings générés par SBERT et Mistral avec ceux produits par fastText.
+# Nous pouvons comparer les embeddings générés par SBERT et Mistral avec ceux produits par fastText.
 
 
 import fasttext.util

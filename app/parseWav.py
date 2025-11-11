@@ -7,13 +7,12 @@ def transcribe_audio_with_whisper(audio_file, model_name="base"):
     model = whisper.load_model(model_name)
 
     # Transcrire le fichier audio
-    result = model.transcribe(audio_file)
+    result = model.transcribe(str(audio_file))  # ✅ convertir Path en str
 
     # Afficher la transcription
     print("Transcription :")
     print(result["text"])
 
 # Transcrire l'audio avec Whisper
-INPUT_FILE = Path(r"C:\Users\eir20812\opt\projet\LLM\RAG-LLM\inputs\communication\voeux2025_trifouillis.wav")
+INPUT_FILE = Path("/opt/projets/llm/rag-pour-un-llm/inputs/communication/voeux2025_trifouillis.wav")
 transcribe_audio_with_whisper(INPUT_FILE)
-

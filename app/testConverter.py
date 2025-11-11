@@ -8,7 +8,7 @@ def doConversion(input_dir):
     converter = DocumentConverter()
 
     #input_dir = Path(r"C:\Users\eir20812\opt\projet\LLM\RAG-LLM\inputs\budget")
-    output_dir = Path(r"C:\Users\eir20812\opt\projet\LLM\RAG-LLM\markdown_outputs")
+    output_dir = Path(r"/opt/projets/llm/rag-pour-un-llm/markdown_outputs")
     output_dir.mkdir(parents=True, exist_ok=True)
 
     input_dir = Path(input_dir)
@@ -65,8 +65,8 @@ def lister_fichiers(base_path):
 
 
 # Exemple d’utilisation :
-INPUT_DIRECTORY = Path(r"C:\Users\eir20812\opt\projet\LLM\RAG-LLM\inputs")
-OUTPUT_DIRECTORY = "C:\\Users\\eir20812\\opt\\projet\\LLM\\RAG-LLM\\markdown_outputs" # Nom du dossier de sortie
+INPUT_DIRECTORY = Path(r"/opt/projets/llm/rag-pour-un-llm/inputs")
+OUTPUT_DIRECTORY = "/opt/projets/llm/rag-pour-un-llmmarkdown_outputs" # Nom du dossier de sortie
 resultats = lister_dossiers(INPUT_DIRECTORY)
 
 print(resultats)
